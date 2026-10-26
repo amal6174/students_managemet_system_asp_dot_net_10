@@ -25,5 +25,11 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
+app.MapControllerRoute(
+    name:"areas",
+    pattern:"{folder}/{controller=Home}/{action=Index}/{id?}"
+
+);
+
 
 app.Run();
